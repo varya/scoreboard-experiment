@@ -1,0 +1,64 @@
+block('schedule')(
+
+    tag()('table'),
+
+    elem('title')(
+        tag()('thead'),
+        content()({
+            tag: 'th',
+            attrs: {
+                colspan: '2'
+            },
+            content: this.ctx.content
+        })
+    ),
+
+    elem('events')(
+        tag()('tbody')
+    ),
+
+    elem('event')(
+
+        tag()('tr'),
+
+        mix()([{
+            block: 'i-glue',
+            js: {
+                modelName: 'schedule-item',
+                modelId: this.ctx.id,
+                modelParentPath: this.ctx.parentPath
+            }
+        }]),
+
+        content()([
+            {
+                elem: 'time',
+                tag: 'td',
+                mix: [{
+                    block: 'glue',
+                    elem: 'model-field',
+                    js: {
+                        name: 'time',
+                        type: 'inline'
+                    }
+                }],
+                content: this.ctx.time
+            },
+            {
+                elem: 'event-name',
+                tag: 'td',
+                mix: [{
+                    block: 'glue',
+                    elem: 'model-field',
+                    js: {
+                        name: 'event-name',
+                        type: 'inline'
+                    }
+                }],
+                content: this.ctx['event-name']
+            }
+        ])
+
+    )
+
+)
