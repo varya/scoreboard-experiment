@@ -21,7 +21,7 @@
                 block: 'i-glue'
             },
             {
-                block: 'i-request'
+                elem: 'dataprovider'
             }
         ]
     }
