@@ -1,3 +1,17 @@
+BEM.MODEL.decl('schedule', {
+
+    list: {
+        type: 'models-list',
+        modelName: 'schedule-item'
+    }
+
+});
+
+BEM.MODEL.decl('schedule-item', {
+    time: 'string',
+    'event-name': 'string'
+});
+
 BEM.DOM.decl({ block: 'schedule', baseBlock: 'i-glue' }, {
     onSetMod: {
         'js' : {
