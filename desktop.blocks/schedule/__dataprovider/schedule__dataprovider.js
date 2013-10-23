@@ -5,7 +5,7 @@ BEM.decl({ name : 'schedule__dataprovider', baseBlock : 'i-request_type_ajax' },
         return this.__base(
             { part : request },
             function(data) {
-                callback.call(this, { items: data[1], metainfo: data[2] })
+                callback.call(this, data.response)
             });
 
     }
