@@ -1,0 +1,45 @@
+[
+    {
+        "id": "kpn-2013",
+        "name": "KPN NK afstanden",
+        "startDate": "2013-10-25",
+        "endDate": "2013-10-27",
+        "now": true
+    },
+    {
+        "id": "wc-saltlakecity-2013",
+        "district": "Salt Lake City",
+        "startDate": "2013-10-15",
+        "endDate": "2013-10-17",
+        "next-one": true,
+        "worldcup": true
+    },
+    {
+        "id": "wc-calgary-2013",
+        "district": "Calgary",
+        "startDate": "2013-11-08",
+        "endDate": "2013-11-10",
+        "worldcup": true
+    },
+    {
+        "id": "wc-astana-2013",
+        "district": "Astana",
+        "startDate": "2013-11-29",
+        "endDate": "2013-12-01",
+        "worldcup": true
+    },
+    {
+        "id": "wc-berlin-2013",
+        "district": "Berlin",
+        "startDate": "2013-12-06",
+        "endDate": "2013-12-08",
+        "worldcup": true
+    },
+    {
+        "id": "ek-2013",
+        "name": "Essent EK allround",
+        "startDate": "2014-01-11",
+        "endDate": "2014-01-13",
+        "last-one": true
+    }
+]

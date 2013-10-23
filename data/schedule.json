@@ -1,0 +1,18 @@
+[
+    {
+        "time": "13:00",
+        "event-name": "2 * 500 meter, Race 1"
+    },
+    {
+        "time": "13:45",
+        "event-name": "2 * 500 meter, Race 2"
+    },
+    {
+        "time": "15:00",
+        "event-name": "1000 meter"
+    },
+    {
+        "time": "16:00",
+        "event-name": "5000 meter"
+    }
+]
