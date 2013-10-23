@@ -31,14 +31,27 @@ BEM.DOM.decl({ block: 'schedule', baseBlock: 'i-glue' }, {
         }
     },
 
+    getDefaultParams: function() {
+
+        return {
+            dataprovider: {
+                url: '/data/schedule.json'
+            }
+        }
+
+    },
+
     _initSchedule: function() {
 
         var schedule = this;
 
-        loader('/data/schedule.json', function(competitions) {
-            var collection = schedule.model.set('list', competitions)
-            schedule.updateSchedule(schedule.model.get('list'));
-        });
+        this.getDataprovider().get(
+            {},
+            function(competitions) {
+                var collection = schedule.model.set('list', competitions)
+                schedule.updateSchedule(schedule.model.get('list'));
+            }
+        );
 
     },
 
@@ -56,6 +69,17 @@ BEM.DOM.decl({ block: 'schedule', baseBlock: 'i-glue' }, {
             time: event.get('time'),
             'event-name': event.get('event-name')
         })
+    },
+
+    getDataprovider: function() {
+        var url = this.params.dataprovider.url;
+
+        return this._dataprovider || (this._dataprovider = BEM.create(
+            this.params.dataprovider.name || this.__self.getName() + '__dataprovider',
+            $.extend(this.params.dataprovider, {
+                url: url,
+                callbackCtx : this
+            })));
     }
 
 });
