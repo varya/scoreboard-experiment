@@ -15,6 +15,7 @@ exports.getConfig = function() {
             ]
             .map(function(path) { return PATH.resolve(environ.LIB_ROOT, path); })
             .concat([
+                'ya-libs/romochka/common.blocks',
                 'common.blocks',
                 'desktop.blocks'
             ]
