@@ -1,36 +1,34 @@
-block('schedule')(
+block schedule {
 
-    tag()('table'),
+    tag: 'table'
 
-    elem('title')(
-        tag()('thead'),
-        content()({
+    elem title {
+        tag: 'thead'
+        content: {
             tag: 'th',
             attrs: {
                 colspan: '2'
             },
             content: this.ctx.content
-        })
-    ),
+        }
+    }
 
-    elem('events')(
-        tag()('tbody')
-    ),
+    elem 'events', tag: 'tbody'
 
-    elem('event')(
+    elem 'event' {
 
-        tag()('tr'),
+        tag: 'tr'
 
-        mix()([{
+        mix: [{
             block: 'i-glue',
             js: {
                 modelName: 'schedule-item',
                 modelId: this.ctx.id,
                 modelParentPath: this.ctx.parentPath
             }
-        }]),
+        }]
 
-        content()([
+        content: [
             {
                 elem: 'time',
                 tag: 'td',
@@ -57,8 +55,7 @@ block('schedule')(
                 }],
                 content: this.ctx['event-name']
             }
-        ])
+        ]
+    }
 
-    )
-
-)
+}
