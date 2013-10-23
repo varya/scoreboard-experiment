@@ -10,8 +10,8 @@ exports.getConfig = function() {
         bundleBuildLevels: this.resolvePaths([
                 'bem-bl/blocks-common',
                 'bem-bl/blocks-desktop',
-                'bem-mvc/blocks-common',
-                'bem-mvc/blocks-desktop'
+                'bem-mvc/common.blocks',
+                'bem-mvc/desktop.blocks'
             ]
             .map(function(path) { return PATH.resolve(environ.LIB_ROOT, path); })
             .concat([
