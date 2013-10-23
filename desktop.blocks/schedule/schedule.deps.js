@@ -21,7 +21,7 @@
                 block: 'i-glue'
             },
             {
-                block: 'schaatsen-loader'
+                block: 'i-request'
             }
         ]
     }
