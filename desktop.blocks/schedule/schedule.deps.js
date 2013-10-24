@@ -30,7 +30,11 @@
         shouldDeps: [
             {
                 block: 'select',
-                mods: { size: ['m'], theme: ['normal'] }
+                mods: { size: ['m'], theme: ['normal'] },
+                elems: ['control']
+            },
+            {
+                block: 'button'
             }
         ]
     }
