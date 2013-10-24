@@ -17,8 +17,7 @@ block schedule {
                 }],
                 content: [
                     {
-                        block: 'button',
-                        content: 'xxx'
+                        block: 'button'
                     },
                     {
                         elem: 'control',
