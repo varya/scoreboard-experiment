@@ -10,7 +10,8 @@ BEM.MODEL.decl('schedule', {
 BEM.MODEL.decl('schedule-item', {
     id: 'string',
     time: 'string',
-    'event-name': 'string'
+    'event-name': 'string',
+    now: 'boolean'
 });
 
 BEM.DOM.decl({ block: 'schedule', baseBlock: 'i-glue' }, {
@@ -73,6 +74,7 @@ BEM.DOM.decl({ block: 'schedule', baseBlock: 'i-glue' }, {
             elem: 'event',
             parentPath: this.modelPath,
             time: event.get('time'),
+            selected: event.get('now'),
             id: event.get('id'),
             'event-name': event.get('event-name')
         })

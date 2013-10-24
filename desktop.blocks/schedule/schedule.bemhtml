@@ -39,7 +39,10 @@ block schedule {
                 this.ctx = {
                     block: 'select',
                     elem: 'option',
-                    attrs: { value: this.ctx.id },
+                    attrs: {
+                        value: this.ctx.id,
+                        selected: this.ctx.selected && 'selected'
+                    },
                     content: this.ctx['event-name']
                 }
             )
