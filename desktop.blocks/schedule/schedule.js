@@ -52,7 +52,6 @@ BEM.DOM.decl({ block: 'schedule', baseBlock: 'i-glue' }, {
             {},
             function(competitions) {
                 var collection = schedule.model.set('list', competitions)
-                schedule.updateSchedule(schedule.model.get('list'));
             }
         );
 
