@@ -1,0 +1,6 @@
+.popup_visibility_outside
+{
+    display: block;
+    top: -99999px;
+    left: -99999px;
+}

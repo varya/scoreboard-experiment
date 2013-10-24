@@ -1,0 +1,19 @@
+.button.button_side_right:before
+{
+    /* left: 0; - убрал отступ с целью отображения границы-разделителя между кнопками */
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.button.button_side_right
+{
+    z-index: 2;
+
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.button.button_side_right.button_focused_yes
+{
+    z-index: 1;
+}

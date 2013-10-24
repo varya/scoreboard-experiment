@@ -1,0 +1,5 @@
+.popup__close
+{
+    filter: alpha(opacity=20);
+    background: url('popup__close.gif') no-repeat !important;
+}

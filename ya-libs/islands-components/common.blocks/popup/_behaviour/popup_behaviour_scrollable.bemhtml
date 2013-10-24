@@ -1,0 +1,8 @@
+block popup, mod behaviour scrollable, default: {
+    this.ctx.mods.wrapped = 'yes';
+    this.ctx.mods['body-scroll'] = 'no';
+
+    this.ctx.wrapperMods = { behaviour: 'scrollable' };
+
+    applyCtx(this.ctx);
+}

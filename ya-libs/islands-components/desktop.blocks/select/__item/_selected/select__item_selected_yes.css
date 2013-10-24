@@ -1,0 +1,10 @@
+/* :after – галочка */
+@media all and (min-width:0px) {
+    /* Для FF3.6 */
+    .i-ua_inlinesvg_no .select__item_selected_yes .select__text:after
+    {
+        background: url(select__tick.png) no-repeat;
+    }
+}
+
+

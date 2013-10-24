@@ -1,0 +1,56 @@
+button.button_theme_pseudo
+{
+    line-height: normal;
+
+    border: 0;
+    background: none;
+}
+
+a.button_theme_pseudo
+{
+    line-height: normal;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+/* Цвет бордера специально написан в таком порядке */
+.button_disabled_yes.button_theme_pseudo .button__text
+{
+    border-color: #e1e1e1;
+}
+
+.button_hovered_yes.button_theme_pseudo .button__text
+{
+    border-color: #a6a6a6;
+}
+
+.button_theme_pseudo .button__text
+{
+    border: 1px solid #ccc;
+}
+
+/* Все что касается размеров ниже */
+button.button_theme_pseudo
+{
+    height: 24px; /* height — по умолчанию для размера S */
+}
+
+.button_theme_pseudo .button__text
+{
+    padding-bottom: 2px; /* padding-bottom — по умолчанию для размера S */
+
+    line-height: 20px; /* line-height — по умолчанию для размера S */
+}
+
+/* Доопределения для размера M, используем двойные классы */
+button.button_size_m.button_theme_pseudo
+{
+    height: 28px;
+}
+
+.button_size_m.button_theme_pseudo .button__text
+{
+    padding-bottom: 1px;
+
+    line-height: 25px;
+}

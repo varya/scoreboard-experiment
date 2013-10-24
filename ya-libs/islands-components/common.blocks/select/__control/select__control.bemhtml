@@ -1,0 +1,21 @@
+block select, elem control {
+
+    tag: 'select'
+
+    attrs: {
+
+        var attrs = ['id', 'name', 'tabindex'],
+            prop = {}, p;
+
+        while(p=attrs.pop()) {
+            this._controlAttrs[p] && (prop[p] = this._controlAttrs[p])
+        }
+
+        this.mods.disabled === 'yes' && (prop.disabled = 'disabled')
+
+        return this.ctx.controlAttrs || prop;
+
+    }
+
+}
+

@@ -1,0 +1,22 @@
+.select_theme_normal,
+.select__popup_theme_normal .select__item
+{
+    font-family: Arial, sans-serif;
+}
+
+/* Select */
+.select__popup_theme_normal .select__item_focused_yes
+{
+    background-color: #ffeba0;
+}
+
+.select__popup_theme_normal .select__item_disabled_yes
+{
+    color: #999;
+}
+
+.select__popup_theme_normal .select__separator
+{
+    border-color: #ddd;
+}
+

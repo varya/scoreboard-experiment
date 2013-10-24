@@ -1,0 +1,34 @@
+/**
+ * select > button
+ */
+block button, this._formSelect {
+
+    default, !this.ctx._theme: {
+
+        // пробрасываем модификаторы темы и размера в кнопку
+        var ctx = this.ctx,
+            selectMods = this._formSelect.mods,
+            tabindex = this._formSelect.tabindex,
+            m = ctx.mods || { };
+
+        m.arrow = 'down';
+
+        selectMods.theme && (m.theme = selectMods.theme);
+        selectMods.size && (m.size = selectMods.size);
+
+        selectMods.disabled === 'yes' && (m.disabled = 'yes');
+
+        ctx.mods = m;
+        tabindex && (ctx.tabindex = tabindex);
+
+        apply(
+            this._mode = '',
+            this.ctx._theme = true
+        );
+
+    }
+
+    mix: [{ block: this._formSelect.block, elem: 'button' }]
+
+}
+

@@ -1,0 +1,42 @@
+a.button_theme_pseudo:hover
+{
+    cursor: pointer;
+
+    color: #333 !important;
+}
+
+@media all and (min-width:0px) {
+    /* Для FF3.6 */ /**/
+    .i-ua_inlinesvg_no button.button_pseudo_yes .button__text
+    {
+        line-height: 184.5% !important;
+    }
+
+    /* Убираем сдвиг текста при нажатии в опере на десктопных браузерах */
+    .button_pressed_yes.button_theme_pseudo
+    {
+        -o-transform: none;
+    }
+
+    /* Фокус только для десктопных браузеров */
+    .button_focused_yes.button_theme_pseudo
+    {
+        -moz-box-shadow: 0 0 6px 2px rgba(255,204,0,.7);
+        box-shadow: 0 0 6px 2px rgba(255,204,0,.7);
+    }
+
+    .button_focused_yes.button_theme_pseudo:before {
+        border-color: rgba(0,0,0,.2);
+    }
+
+    .button_focused_yes.button_hovered_yes.button_theme_pseudo
+    {
+        -moz-box-shadow: 0 0 6px 2px rgba(255,204,0,.7);
+        box-shadow: 0 0 6px 2px rgba(255,204,0,.7);
+    }
+
+    .button_focused_yes.button_hovered_yes.button_theme_pseudo:hover:before {
+        border-color: rgba(0,0,0,.35);
+    }
+
+}

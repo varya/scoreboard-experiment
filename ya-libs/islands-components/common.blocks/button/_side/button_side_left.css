@@ -1,0 +1,20 @@
+.button.button_side_left:before
+{
+    right: 0;
+
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.button.button_side_left
+{
+    z-index: 2;
+
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.button.button_focused_yes.button_side_left
+{
+    z-index: 1;
+}

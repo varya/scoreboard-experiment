@@ -1,0 +1,16 @@
+@media all and (min-width:0px) {
+    /* :before — при наведении меняет градиент у кнопки */
+    .button_theme_action.button_hovered_yes:before
+    {
+        background: rgb(255,230,129);
+        background: -webkit-linear-gradient(top, rgba(255,230,129,1) 0,rgba(255,212,40,1) 100%);
+        background:    -moz-linear-gradient(top, rgba(255,230,129,1) 0,rgba(255,212,40,1) 100%);
+        background:      -o-linear-gradient(top, rgba(255,230,129,1) 0,rgba(255,212,40,1) 100%);
+        background:   linear-gradient(to bottom, rgba(255,230,129,1) 0,rgba(255,212,40,1) 100%);
+    }
+}
+
+a.button_theme_action.button_hovered_yes
+{
+    color: #333 !important;
+}

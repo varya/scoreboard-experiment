@@ -1,0 +1,32 @@
+block select {
+
+    default: {
+
+        var ctx = this.ctx,
+            id = ctx.id || this.generateId();
+
+        applyNext(
+            this._controlAttrs = {
+                id: id,
+                name: ctx.name || id,
+                tabindex: ctx.tabindex
+            },
+            this._formSelect = {
+                block: this.block,
+                mods: this.mods,
+                tabindex: ctx.tabindex
+            }
+        );
+
+    }
+
+    js: true
+
+    tag: 'span'
+
+    elem option, tag: 'option'
+
+    elem option-group, tag: 'optgroup'
+
+    elem text, tag: 'span'
+}

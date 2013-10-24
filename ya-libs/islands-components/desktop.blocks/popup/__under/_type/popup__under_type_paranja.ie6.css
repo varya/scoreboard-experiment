@@ -1,0 +1,26 @@
+.popup__under_type_paranja
+{
+    position: absolute;
+    font: 0/0 a;
+    zoom: 1;
+    padding: 0;
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0', MakeShadow='true', ShadowOpacity='0.3');
+
+    w: expression(function (t) {
+            var p = document.documentElement,
+                q = document.body,
+                w = p.clientWidth || q.clientWidth,
+                h = p.clientHeight || q.clientHeight,
+                scrollTop = p.scrollTop || q.scrollTop,
+                scrollLeft = p.scrollLeft || q.scrollLeft;
+
+            if ( t.h != h || t.w != w || t._scrollTop != scrollTop || t._scrollLeft != scrollLeft ) {
+                t.h = h;
+                t.w = w;
+                t._scrollTop = scrollTop;
+                t._scrollLeft = scrollLeft;
+
+                t.runtimeStyle.cssText = 'width:' + ( w + scrollLeft ) + 'px;' + 'height:' + ( h + scrollTop ) + 'px;';
+            }
+    }(this));
+}

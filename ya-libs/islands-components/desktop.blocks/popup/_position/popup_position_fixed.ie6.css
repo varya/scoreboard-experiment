@@ -1,0 +1,28 @@
+.popup_position_fixed
+{
+    position: absolute;
+
+    zoom: expression(function(t) {
+        if(!t.z) {
+            t.z = document.body;
+            t.d = document.documentElement;
+            t.z.runtimeStyle.backgroundImage || (t.z.runtimeStyle.backgroundImage = 'url(about:blank)');
+            t.z.runtimeStyle.backgroundAttachment = 'fixed';
+        }
+
+        var scrollTop = t.d.scrollTop || t.z.scrollTop,
+            scrollLeft = t.d.scrollLeft || t.z.scrollLeft,
+            docWidth = t.d.offsetWidth || t.z.offsetWidth,
+            docHeight = t.d.offsetHeight || t.z.offsetHeight;
+
+        if (t._scrollTop != scrollTop || t._docHeight != docHeight || t._scrollLeft != scrollLeft || t._docWidth != docWidth) {
+            t.runtimeStyle.cssText = 'top:' + (scrollTop + docHeight/2) + 'px;' + 'left:' + (scrollLeft + docWidth/2) + 'px;';
+
+
+            t._scrollTop = scrollTop;
+            t._scrollLeft = scrollLeft;
+            t._docHeight = docHeight;
+            t._docWidth = docWidth;
+        }
+    }(this));
+}

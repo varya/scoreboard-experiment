@@ -1,0 +1,28 @@
+.select__item
+{
+    cursor: default;
+    white-space: nowrap;
+}
+
+.select__text
+{
+    position: relative;
+
+    display: inline-block;
+    overflow: hidden;
+
+    max-width: 100%;
+    padding: 0 2.5em 0 1em;
+
+    vertical-align: top;
+    text-overflow: ellipsis;
+
+    -o-text-overflow: ellipsis;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}

@@ -1,0 +1,11 @@
+.button_theme_pseudo .button__text
+{
+    top: -1px;
+
+    display: inline-block;
+}
+
+.button_size_m.button_theme_pseudo .button__text
+{
+    top: -2px;
+}

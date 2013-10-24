@@ -1,0 +1,11 @@
+.select,
+.select .select__control
+{
+    max-width: 500px;
+}
+
+.select__popup .popup__content
+{
+    max-width: 496px;
+}
+

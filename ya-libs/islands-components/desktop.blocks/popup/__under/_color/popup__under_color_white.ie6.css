@@ -1,0 +1,4 @@
+.popup__under_color_white
+{
+    filter: alpha(opacity=80);
+}

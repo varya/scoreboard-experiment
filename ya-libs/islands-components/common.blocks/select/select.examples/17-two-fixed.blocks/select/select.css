@@ -1,0 +1,27 @@
+.select_width_100 .select__button,
+.select_width_400 .select__button
+{
+    width: 100%;
+}
+
+.select_width_100,
+.select_width_100 .select__control
+{
+    width: 100px;
+}
+
+.select__popup_width_100 .popup__content
+{
+    width: 98px;
+}
+
+.select_width_400,
+.select_width_400 .select__control
+{
+    width: 400px;
+}
+
+.select__popup_width_400 .popup__content
+{
+    width: 398px;
+}

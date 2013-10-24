@@ -1,0 +1,24 @@
+.select__popup
+{
+    width: auto;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+    -webkit-overflow-scrolling: touch; /*LEGO-7899*/
+}
+
+/* after — в попапе не нужен */
+.select__popup:after
+{
+    content: none;
+}
+
+.select__popup .popup__content
+{
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    padding: 0;
+}

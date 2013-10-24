@@ -1,0 +1,70 @@
+.button_theme_normal
+{
+    font-family: Arial, sans-serif;
+}
+
+@media all and (min-width:0px) {
+    /* button — задает рамку у кнопки */
+    .button_theme_normal
+    {
+        background: rgba(0,0,0,0.4);
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0.2) 0,rgba(0,0,0,0.4) 100%);
+        background: -moz-linear-gradient(top, rgba(0,0,0,0.2) 0, rgba(0,0,0,0.4) 100%);
+        background: -o-linear-gradient(top, rgba(0,0,0,0.2) 0,rgba(0,0,0,0.4) 100%);
+        background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0,rgba(0,0,0,0.4) 100%);
+
+        -moz-box-shadow: 0 1px 0 rgba(0,0,0,.07);
+        box-shadow: 0 1px 0 rgba(0,0,0,.07);
+
+        border-radius: 3px;
+    }
+
+    /* :before — градиент у кнопки */
+    .button_theme_normal:before
+    {
+        position: absolute;
+        bottom: 1px;
+        right: 1px;
+        left: 1px;
+        top: 1px;
+
+        content: '';
+
+        background: #fff;
+        background: -webkit-linear-gradient(top, #fff 0,#eee 100%);
+        background: -moz-linear-gradient(top, #fff 0, #eee 100%);
+        background: -o-linear-gradient(top, #fff 0,#eee 100%);
+        background: linear-gradient(to bottom, #fff 0,#eee 100%);
+
+        border-radius: 2px;
+    }
+
+    .button_focused_yes.button_theme_normal
+    {
+        -moz-box-shadow: 0 1px 0 rgba(0,0,0,.07), 0 0 6px 2px rgba(255,204,0,.7);
+        box-shadow: 0 1px 0 rgba(0,0,0,.07), 0 0 6px 2px rgba(255,204,0,.7);
+    }
+
+    .button_focused_yes.button_theme_normal:not(.button_pressed_yes):before
+    {
+        -moz-box-shadow: 0 0 0 1px rgba(193,154,0,.2);
+        box-shadow: 0 0 0 1px rgba(193,154,0,.2);
+    }
+
+    .button_pressed_yes.button_theme_normal
+    {
+        -moz-box-shadow: inset 0 2px 1px -1px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.2);
+        box-shadow: inset 0 2px 1px -1px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.2);
+    }
+
+    .button_pressed_yes.button_theme_normal:before
+    {
+        -moz-box-shadow: inset 0 1px 3px -1px rgba(0,0,0,.5);
+        box-shadow: inset 0 1px 3px -1px rgba(0,0,0,.5);
+    }
+
+    .button_theme_normal
+    {
+        color: #333 !important;
+    }
+}

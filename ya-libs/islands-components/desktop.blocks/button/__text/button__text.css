@@ -1,0 +1,7 @@
+@media all and (min-width:0px) {
+    /* Для FF3.6 */ /**/
+    .i-ua_inlinesvg_no button.button .button__text
+    {
+    	line-height: 215.5% !important;
+    }
+}

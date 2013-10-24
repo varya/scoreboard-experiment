@@ -1,0 +1,6 @@
+block popup, mod has-close yes, default: {
+
+    this.ctx.content.push({ elem: 'close' });
+
+    applyNext();
+}

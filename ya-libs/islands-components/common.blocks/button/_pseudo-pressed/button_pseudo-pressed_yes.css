@@ -1,0 +1,56 @@
+@media all and (min-width:0px) {
+
+    .button_theme_pseudo.button_pseudo-pressed_yes .button__text
+    {
+        z-index: 1;
+    }
+
+    .button_theme_pseudo.button_pseudo-pressed_yes.button:after,
+    .button_theme_pseudo.button_pseudo-pressed_yes.button:before
+    {
+        position: absolute;
+
+        content: '';
+    }
+
+    /* :before — рисует границу */
+    .button_theme_pseudo.button_pseudo-pressed_yes:before
+    {
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+
+        border-radius: 3px;
+    }
+
+    /* :after — фон для нажатого состояния */
+    .button_theme_pseudo.button_pseudo-pressed_yes:after
+    {
+        bottom: 1px;
+        right: 1px;
+        left: 1px;
+        top: 1px;
+
+        border-radius: 2px;
+    }
+
+    /* Нажатое состояние */
+    .button_theme_pseudo.button_pseudo-pressed_yes.button_pressed_yes .button__text
+    {
+        top: 1px;
+    }
+
+    .button_theme_pseudo.button_pseudo-pressed_yes.button_pressed_yes:after
+    {
+        background: #ffeca6;
+        background: -webkit-linear-gradient(top, #ffeca6 0,#fff6d5 100%);
+        background: -moz-linear-gradient(top, #ffeca6 0, #fff6d5 100%);
+        background: -o-linear-gradient(top, #ffeca6 0,#fff6d5 100%);
+        background: linear-gradient(to bottom, #ffeca6 0,#fff6d5 100%);
+
+        -moz-box-shadow: inset 0 1px 3px -1px rgba(0,0,0,0.45);
+        box-shadow: inset 0 1px 3px -1px rgba(0,0,0,0.45);
+    }
+
+}

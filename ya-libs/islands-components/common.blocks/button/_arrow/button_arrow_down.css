@@ -1,0 +1,20 @@
+.button_arrow_down .button__text
+{
+    padding-right: 1.8em;
+}
+
+/* Стрелочка в кнопке */
+.button_arrow_down .button__text:after
+{
+    position: absolute;
+    top: 0;
+    right: 0.4em;
+
+    content: '';
+
+    width: 1em;
+    height: 100%;
+
+    /*background: url(button_arrow_down.svg) 0 50% no-repeat;*/
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwb2x5Z29uIHBvaW50cz0iNy4xOTQsMiAzLjk5Niw1LjE5NSAwLjc5OSwyIDAsMi43OTkgMy45OTYsNi43OTQgNy45OTEsMi43OTkiLz48L3N2Zz4=) 0 50% no-repeat;
+}

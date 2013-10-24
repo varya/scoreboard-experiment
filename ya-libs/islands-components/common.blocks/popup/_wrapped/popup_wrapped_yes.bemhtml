@@ -1,0 +1,9 @@
+block popup, mod wrapped yes, default: {
+    this.ctx.content.push({
+        elem: 'wrapper',
+        mix: this.ctx.wrapperMix,
+        elemMods: this.ctx.wrapperMods
+    });
+
+    applyNext();
+}

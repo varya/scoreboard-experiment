@@ -1,0 +1,100 @@
+.popup__tail
+{
+    font: 0/0 a;
+
+    position: absolute;
+    z-index: 9;
+
+    display: block;
+
+    width: 17px;
+    height: 17px;
+
+    /*margin: -8.6px;*/
+}
+
+.popup__tail:after
+{
+    content: '';
+    position: absolute;
+
+    width: 17px;
+    height: 17px;
+}
+
+.popup_to_top .popup__tail
+{
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: top left;
+       -moz-transform-origin: top left;
+        -ms-transform-origin: top left;
+         -o-transform-origin: top left;
+            transform-origin: top left;
+    top: 100%;
+}
+
+.popup_to_left .popup__tail
+{
+    -webkit-transform: rotate(-135deg);
+       -moz-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+         -o-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+    -webkit-transform-origin: top left;
+       -moz-transform-origin: top left;
+        -ms-transform-origin: top left;
+         -o-transform-origin: top left;
+            transform-origin: top left;
+    margin-top: 24.04px; /* 17 * sqrt(2)*/
+    left: 100%;
+}
+
+.popup_to_top .popup__tail:after,
+.popup_to_left .popup__tail:after
+{
+    left: 1px;
+    bottom: 1px;
+}
+
+.popup_to_bottom .popup__tail
+{
+    -webkit-transform: rotate(135deg);
+       -moz-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+         -o-transform: rotate(135deg);
+            transform: rotate(135deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    margin-left: -17px;
+    bottom: 100%;
+}
+
+.popup_to_right .popup__tail
+{
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    margin-top: 7.04px; /* ( 17*sqrt(2) - 17) */
+    right: 100%;
+}
+
+.popup_to_bottom .popup__tail:after,
+.popup_to_right .popup__tail:after
+{
+    left: 1px;
+    bottom: 1px;
+}

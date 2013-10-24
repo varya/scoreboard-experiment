@@ -1,0 +1,22 @@
+.select__button
+{
+    max-width: 100%;
+
+    text-align: left;
+
+    vertical-align: top;
+}
+
+.select__button .button__text
+{
+    display: block;
+    overflow: hidden;
+
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.i-ua_js_no .select__button
+{
+    display: none;
+}

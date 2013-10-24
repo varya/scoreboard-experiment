@@ -1,0 +1,4 @@
+.select__popup_scrollable_yes .popup__content
+{
+    overflow-y: scroll;
+}

@@ -1,0 +1,43 @@
+.popup__tail:after
+{
+    display: none;
+}
+
+.popup__tail {
+    height: 25px;
+    width: 25px;
+}
+
+.popup_to_left .popup__tail,
+.popup_to_right .popup__tail
+{
+    margin: 0;
+    width: 13px;
+}
+
+.popup_to_top .popup__tail,
+.popup_to_bottom .popup__tail
+{
+    margin: 0px;
+    height: 13px;
+}
+
+.popup_to_bottom .popup__tail
+{
+    background-position: 0px 0px;
+}
+
+.popup_to_top .popup__tail
+{
+    background-position: -27px 0px;
+}
+
+.popup_to_left .popup__tail
+{
+    background-position: -54px 0px;
+}
+
+.popup_to_right .popup__tail
+{
+    background-position: -69px 0px;
+}

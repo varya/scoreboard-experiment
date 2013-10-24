@@ -1,0 +1,16 @@
+block button, mod round yes {
+
+    content: {
+        block: 'b-icon',
+        mix: [{ block: 'button', elem: 'icon' }],
+        alt: ''
+    }
+
+    default, !(this.ctx.mods || {})['only-icon']: applyNext(
+       this.ctx.mods = this.ctx.mods || {},
+       this.ctx.mods['only-icon'] = 'yes'
+   )
+}
+
+
+

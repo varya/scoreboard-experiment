@@ -1,0 +1,39 @@
+/* Задаем большую тень самому блоку */
+body .button_shadow_yes
+{
+    -moz-box-shadow: 0 8px 20px -5px rgba(0,0,0,.25);
+    box-shadow: 0 8px 20px -5px rgba(0,0,0,.25);
+}
+
+/* Тень в нажатом состоянии меньше */
+body .button_pressed_yes.button_shadow_yes
+{
+    -moz-box-shadow: 0 4px 10px -4px rgba(0,0,0,.45);
+    box-shadow: 0 4px 10px -4px rgba(0,0,0,.45);
+}
+
+/* В фокусе тень большая и добавляется тень желтого цвета */
+body .button_focused_yes.button_shadow_yes:not(.button_pressed_yes)
+{
+    -moz-box-shadow: 0 8px 20px -5px rgba(0,0,0,.25), 0 0 6px 2px rgba(255, 204, 0, 0.7);
+    box-shadow: 0 8px 20px -5px rgba(0,0,0,.25), 0 0 6px 2px rgba(255, 204, 0, 0.7);
+}
+
+@media all and (min-width:0px) {
+    /* В нажатом состоянии смещается вниз на 1px вся кнопка, текст не смещается */
+    .button_pressed_yes.button_shadow_yes
+    {
+        top: 1px;
+    }
+
+    .button_pressed_yes.button_shadow_yes .button__text
+    {
+        top: 0;
+    }
+}
+
+/* Убираем внутреннюю тень, которая задается в _theme */
+body .button_pressed_yes.button_shadow_yes:before
+{
+    box-shadow: none;
+}

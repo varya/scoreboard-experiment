@@ -1,0 +1,6 @@
+.popup__text
+{
+    overflow: auto;
+    width: 80em;
+    height: 50em;
+}

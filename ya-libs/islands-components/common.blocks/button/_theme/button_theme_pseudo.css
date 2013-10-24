@@ -1,0 +1,69 @@
+.button_theme_pseudo
+{
+    font-family: Arial, sans-serif;
+}
+
+.button_theme_pseudo,
+a.button_theme_pseudo:link,
+a.button_theme_pseudo:visited
+{
+    cursor: pointer;
+
+    color: #333 !important;
+}
+
+.button_theme_pseudo .button__text
+{
+    padding: 0 .78em;
+}
+
+@media all and (min-width:0)
+{
+    /* Псевдо-кнопка по высоте меньше чем обычная.
+       Также псевдо-кнопка может использоваться без pseudo_yes, поэтому размеры лежат тут.
+    */
+    .button_theme_pseudo
+    {
+        line-height: 24px; /* line-height — по умолчанию для размера S */
+    }
+
+    .button_size_m.button_theme_pseudo
+    {
+        line-height: 28px;
+    }
+
+    .button_theme_pseudo .button__text
+    {
+        /* Текст в кнопке не сдвигается при нажатии */
+        top: 0;
+    }
+
+    .button_theme_pseudo
+    {
+        position: relative;
+
+        border-radius: 3px;
+        outline: hidden;
+        background: transparent; /* Псевдо-кнопка прозрачная */
+    }
+
+    .button_theme_pseudo:before
+    {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        content: '';
+
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 3px;
+    }
+
+    .button_hovered_yes.button_theme_pseudo:before
+    {
+        border-color: rgba(0,0,0,.35);
+    }
+}

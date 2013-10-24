@@ -1,0 +1,78 @@
+@media all and (min-width:0px) {
+
+    .button_theme_dark-grey,
+    a.button_theme_dark-grey.button_hovered_yes
+    {
+        font-family: Arial, sans-serif;
+
+        color: #fff !important;
+    }
+
+    /* button — задает рамку у кнопки */
+    .button_theme_dark-grey
+    {
+        background: rgba(0,0,0,.4);
+        background: -webkit-linear-gradient(top, rgba(0,0,0,.2) 0,rgba(0,0,0,.4) 100%);
+        background: -moz-linear-gradient(top, rgba(0,0,0,.2) 0, rgba(0,0,0,.4) 100%);
+        background: -ms-linear-gradient(top, rgba(0,0,0,.2) 0,rgba(0,0,0,.4) 100%);
+        background: -o-linear-gradient(top, rgba(0,0,0,.2) 0,rgba(0,0,0,.4) 100%);
+        background: linear-gradient(to bottom, rgba(0,0,0,.2) 0,rgba(0,0,0,.4) 100%);
+
+        -moz-box-shadow: 0 1px 0 rgba(0,0,0,.07);
+        box-shadow: 0 1px 0 rgba(0,0,0,.07);
+
+        border-radius: 3px;
+    }
+
+    /* :before — градиент у кнопки */
+    .button_theme_dark-grey:before
+    {
+        position: absolute;
+        bottom: 1px;
+        right: 1px;
+        left: 1px;
+        top: 1px;
+
+        content: '';
+
+        background: #5f5e5e;
+        background: -webkit-linear-gradient(top, #5f5e5e 0%,#434342 100%);
+        background: -moz-linear-gradient(top, #5f5e5e 0%, #434342 100%);
+        background: -o-linear-gradient(top, #5f5e5e 0%,#434342 100%);
+        background: -ms-linear-gradient(top, #5f5e5e 0%,#434342 100%);
+        background: linear-gradient(top, #5f5e5e 0%,#434342 100%);
+
+        -moz-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.12) inset;
+        box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.12) inset;
+
+        border-radius: 2px;
+    }
+
+    .button_theme_dark-grey.button_hovered_yes:before
+    {
+        background: #696868;
+        background: -webkit-linear-gradient(top, #696868 0, #4e4e4d 100%);
+        background: -moz-linear-gradient(top, #696868 0, #4e4e4d 100%);
+        background: -o-linear-gradient(top, #696868 0, #4e4e4d 100%);
+        background: -ms-linear-gradient(top, #696868 0, #4e4e4d 100%);
+        background: linear-gradient(top, #696868 0, #4e4e4d 100%);
+    }
+
+    .button_theme_dark-grey .button__text
+    {
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, .9);
+    }
+
+    .button_pressed_yes.button_theme_dark-grey
+    {
+        -moz-box-shadow: inset 0 2px 1px -1px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.2);
+        box-shadow: inset 0 2px 1px -1px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.2);
+    }
+
+    .button_pressed_yes.button_theme_dark-grey:before
+    {
+        -moz-box-shadow: inset 0 1px 3px -1px rgba(0,0,0,.5);
+        box-shadow: inset 0 1px 3px -1px rgba(0,0,0,.5);
+    }
+
+}

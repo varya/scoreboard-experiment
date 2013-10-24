@@ -1,0 +1,25 @@
+block popup, default: {
+
+    var mods = this.ctx.mods || { };
+
+    mods.theme || (mods.theme = 'ffffff');
+    mods.autoclosable || (mods.autoclosable = 'yes');
+    mods.adaptive || (mods.adaptive = 'yes');
+    mods.animate || (mods.animate = 'yes');
+
+    this.ctx.mods = mods;
+
+    if(this.ctx.zIndex) {
+        var attrs = this.ctx.attrs || (this.ctx.attrs = { });
+
+        attrs.style || (attrs.style = '');
+        attrs.style += 'z-index:' + this.ctx.zIndex;
+    }
+
+    this.ctx.content = [
+        { elem: 'under', mods: this.ctx.underMods },
+        this.ctx.content
+    ];
+
+    applyCtx(this.ctx);
+}

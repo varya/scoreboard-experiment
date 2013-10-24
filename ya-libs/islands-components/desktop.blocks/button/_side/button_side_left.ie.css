@@ -1,0 +1,5 @@
+.button_side_left,
+.button_focused_yes.button_side_left
+{
+    z-index: auto;
+}

@@ -1,0 +1,7 @@
+.select_size_s,
+.select__popup_size_s .select__item
+{
+    line-height: 28px;
+
+    font-size: 13px;
+}

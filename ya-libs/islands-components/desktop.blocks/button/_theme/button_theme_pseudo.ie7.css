@@ -1,0 +1,9 @@
+.button_theme_pseudo .button__text
+{
+    zoom: 1;
+}
+
+.button_size_s.button_theme_pseudo .button__text
+{
+    top: 1px;
+}

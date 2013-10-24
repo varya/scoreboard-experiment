@@ -1,0 +1,40 @@
+.popup__tail
+{
+    width: 18px;
+    height: 18px;
+
+    background-image: none !important;
+    filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=-0.70710678, M21=0.70710678, M22=0.70710678,sizingMethod = 'auto expand');
+}
+
+.popup_to_left .popup__tail,
+.popup_to_right .popup__tail
+{
+    margin-top: -1px;
+}
+
+.popup_to_left .popup__tail
+{
+    margin-left: -14px;
+}
+
+.popup_to_right .popup__tail
+{
+    margin-right: -13px;
+}
+
+.popup_to_top .popup__tail
+{
+    margin-top: -13px;
+}
+
+.popup_to_bottom .popup__tail
+{
+    margin-bottom: -14px;
+}
+
+.popup_to_top .popup__tail,
+.popup_to_bottom .popup__tail
+{
+    margin-left: -2px;
+}

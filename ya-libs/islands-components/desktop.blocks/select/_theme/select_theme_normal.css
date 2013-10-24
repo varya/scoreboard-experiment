@@ -1,0 +1,5 @@
+/* Select */
+.select__popup_theme_normal .select__item_hovered_yes
+{
+    background-color: #ffeba0;
+}
