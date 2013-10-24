@@ -12,8 +12,9 @@ MAKE.decl('Arch', {
 
     libraries: [
         'bem-bl @ 0.3',
-        'bem-controls @ v1',
-        'bem-mvc'
+        'bem-components',
+        'bem-mvc',
+        'bem-history'
     ]
 
 });
