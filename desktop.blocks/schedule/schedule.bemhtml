@@ -1,36 +1,50 @@
 block schedule {
 
-    tag: 'table'
-
     elem title {
-        tag: 'thead'
-        content: {
-            tag: 'th',
-            attrs: {
-                colspan: '2'
-            },
-            content: this.ctx.content
-        }
+        tag: 'h1'
+        content: this.ctx.content
     }
 
-    elem 'events', tag: 'tbody'
+    elem 'events', default: {
+        applyNext(
+            this._mode = '',
+            this.ctx = {
+                block: 'select',
+                mods: { size: 'm', theme: 'normal' },
+                mix: [{
+                    block: 'schedule',
+                    elem:'select'
+                }],
+                content: [
+                    {
+                        block: 'button',
+                        content: 'xxx'
+                    },
+                    {
+                        elem: 'control',
+                        mix: [{
+                            block: 'schedule',
+                            elem: 'events'
+                        }]
+                    }
+                ]
+            }
+        )
+    }
 
     elem 'event' {
 
-        tag: 'tr'
-
-        content: [
-            {
-                elem: 'time',
-                tag: 'td',
-                content: this.ctx.time
-            },
-            {
-                elem: 'event-name',
-                tag: 'td',
-                content: this.ctx['event-name']
-            }
-        ]
+        default: {
+            applyNext(
+                this._mode = '',
+                this.ctx = {
+                    block: 'select',
+                    elem: 'option',
+                    attrs: { value: this.ctx.id },
+                    content: this.ctx['event-name']
+                }
+            )
+        }
     }
 
 }

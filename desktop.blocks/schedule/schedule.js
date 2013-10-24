@@ -8,6 +8,7 @@ BEM.MODEL.decl('schedule', {
 });
 
 BEM.MODEL.decl('schedule-item', {
+    id: 'string',
     time: 'string',
     'event-name': 'string'
 });
@@ -20,11 +21,14 @@ BEM.DOM.decl({ block: 'schedule', baseBlock: 'i-glue' }, {
 
                 this.location = BEM.blocks['i-location'].get();
 
+                this._selectControl = this.findBlockInside(this.elem('select'), 'select');
+
                 this.modelPath = this.model.path();
 
                 this.model
                     .on('list', 'add', function(e, data){
                         BEM.DOM.append(this.elem('events'), this._generateScheduleItem(data.model));
+                        this._selectControl.redraw();
                     }, this);
 
                 this._initSchedule();
@@ -69,6 +73,7 @@ BEM.DOM.decl({ block: 'schedule', baseBlock: 'i-glue' }, {
             elem: 'event',
             parentPath: this.modelPath,
             time: event.get('time'),
+            id: event.get('id'),
             'event-name': event.get('event-name')
         })
     },

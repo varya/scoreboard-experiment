@@ -26,6 +26,12 @@
             {
                 block: 'i-location'
             }
+        ],
+        shouldDeps: [
+            {
+                block: 'select',
+                mods: { size: ['m'], theme: ['normal'] }
+            }
         ]
     }
 ])
