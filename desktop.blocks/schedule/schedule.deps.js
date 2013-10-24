@@ -22,6 +22,9 @@
             },
             {
                 elem: 'dataprovider'
+            },
+            {
+                block: 'i-location'
             }
         ]
     }

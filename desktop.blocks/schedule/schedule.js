@@ -18,6 +18,8 @@ BEM.DOM.decl({ block: 'schedule', baseBlock: 'i-glue' }, {
             'inited' : function() {
                 this.__base();
 
+                this.location = BEM.blocks['i-location'].get();
+
                 this.modelPath = this.model.path();
 
                 this.model
