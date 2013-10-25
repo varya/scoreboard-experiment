@@ -18,13 +18,20 @@ BEM.DOM.decl({ block: 'schedule', baseBlock: 'i-glue' }, {
     onSetMod: {
         'js' : {
             'inited' : function() {
-                this.__base();
 
-                this.location = BEM.blocks['i-location'].get();
+                this.__base();
 
                 this._selectControl = this.findBlockInside(this.elem('select'), 'select');
 
                 this.modelPath = this.model.path();
+
+                BEM.router.on('route', function(){
+                    console.log('router works');
+                });
+
+                this._selectControl.on('change', function(data){
+                    BEM.router.navigate('event/' + this._selectControl.val());
+                }, this);
 
                 this.model
                     .on('list', 'add', function(e, data){
@@ -56,7 +63,9 @@ BEM.DOM.decl({ block: 'schedule', baseBlock: 'i-glue' }, {
         this.getDataprovider().get(
             {},
             function(competitions) {
-                var collection = schedule.model.set('list', competitions)
+                var collection = schedule.model.set('list', competitions);
+
+                var currentEvent = collection.get('list').where({ now: true })[0];
             }
         );
 
