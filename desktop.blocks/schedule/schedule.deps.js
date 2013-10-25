@@ -11,8 +11,7 @@
     {
         mustDeps: [
             {
-                block: 'i-bem',
-                elem: 'html'
+                block: 'i-bem'
             },
             {
                 block: 'i-model'
@@ -24,7 +23,10 @@
                 elem: 'dataprovider'
             },
             {
-                block: 'i-location'
+                block: 'backbone'
+            },
+            {
+                block: 'router'
             }
         ],
         shouldDeps: [
@@ -35,6 +37,9 @@
             },
             {
                 block: 'button'
+            },
+            {
+                block: 'initializer'
             }
         ]
     }
