@@ -49,7 +49,7 @@ BEM.DOM.decl({ block: 'schedule', baseBlock: 'i-glue' }, {
 
         return {
             dataprovider: {
-                url: '/data/schedule.json',
+                url: '../../data/schedule.json',
                 dataType: 'json'
             }
         }
