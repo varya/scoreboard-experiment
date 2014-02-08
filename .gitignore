@@ -5,6 +5,3 @@ node_modules/
 .project
 .svn
 .bem/cache/
-*.bundles/*/*.*
-!*.bundles/*/*.bemjson.js
-!*.bundles/.bem/*
