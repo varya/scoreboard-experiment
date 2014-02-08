@@ -1,0 +1,10 @@
+@import url(index.css);
+@import url(../../libs/bem-components/desktop.blocks/checkbox/__tick/checkbox__tick.ie.css);
+@import url(../../libs/bem-components/desktop.blocks/checkbox/_disabled/checkbox_disabled_yes.ie.css);
+@import url(../../libs/bem-components/desktop.blocks/input/_disabled/input_disabled_yes.ie.css);
+@import url(../../libs/bem-components/desktop.blocks/input/__box/input__box.ie.css);
+@import url(../../libs/bem-components/desktop.blocks/input/__clear/input__clear.ie.css);
+@import url(../../libs/bem-components/desktop.blocks/button/button.ie.css);
+@import url(../../libs/bem-components/desktop.blocks/button/__text/button__text.ie.css);
+@import url(../../libs/bem-components/desktop.blocks/button/_disabled/button_disabled_yes.ie.css);
+@import url(../../libs/bem-components/desktop.blocks/button/_size/button_size_m.ie.css);
